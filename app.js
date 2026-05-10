@@ -125,12 +125,13 @@ document.addEventListener('DOMContentLoaded', () => {
         script.src = "https://giscus.app/client.js";
         
         // --- TO THE OWNER: REPLACE THESE WITH YOUR REPO INFO ---
-        script.setAttribute("data-repo", "YOUR_GITHUB_USERNAME/YOUR_REPO_NAME"); // e.g., "aha/quera-courses-rating"
-        script.setAttribute("data-repo-id", "YOUR_REPO_ID"); // e.g., "R_kgDOXXXXXX"
-        script.setAttribute("data-category", "General"); // Or your specific category name
-        script.setAttribute("data-category-id", "DIC_kwDOXXXXXX"); 
+        script.setAttribute("data-repo", "amirasaadi/Quera-college-rates-and-comments");
+        script.setAttribute("data-repo-id", "R_kgDOSZPZpA");
+        script.setAttribute("data-category", "Announcements");
+        script.setAttribute("data-category-id", "DIC_kwDOSZPZpM4C8s-f");
         // -------------------------------------------------------
 
+        // Note: Kept data-mapping="specific" and data-term=term so comments are per-course
         script.setAttribute("data-mapping", "specific");
         script.setAttribute("data-term", term);
         script.setAttribute("data-strict", "0");
@@ -138,10 +139,11 @@ document.addEventListener('DOMContentLoaded', () => {
         script.setAttribute("data-emit-metadata", "0");
         script.setAttribute("data-input-position", "bottom");
         
+        // Note: Kept dynamic theme so it changes with your site's dark/light toggle
         const theme = document.documentElement.getAttribute('data-theme');
         script.setAttribute("data-theme", theme === 'dark' ? 'dark' : 'light');
         
-        script.setAttribute("data-lang", "fa");
+        script.setAttribute("data-lang", "en");
         script.crossOrigin = "anonymous";
         script.async = true;
         
